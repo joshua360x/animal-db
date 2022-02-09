@@ -4,6 +4,7 @@ export default function Animal({
   Age,
   Sex,
   ['Looks Like']: looksLike,
+  ['At AAC']: locationStillThere,
   Color,
   Type,
   ['Image Link']: imageLink,
@@ -42,6 +43,7 @@ export default function Animal({
       <p>
         I am a {Type} and I kind look like a {looksLike}
       </p>
+      <p>{locationStillThere}</p>
     </div>
   );
 }
