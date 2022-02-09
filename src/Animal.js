@@ -1,16 +1,16 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Animal({
   Age,
   Sex,
   ['Looks Like']: looksLike,
   ['At AAC']: locationStillThere,
+  ['Animal ID']: id,
   Color,
   Type,
   ['Image Link']: imageLink,
 }) {
-
-  // random color 
+  // random color
   function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -19,7 +19,6 @@ export default function Animal({
     }
     return color;
   }
-
 
   // USEFUL Table
   // Age: "3 years"
@@ -34,16 +33,18 @@ export default function Animal({
   // Type: "Dog"
 
   return (
-    <div className='animal' style={{ backgroundColor: getRandomColor() }}>
-      <p>{Age}</p>
-      <p>{Color}</p>
-      <p>{Sex}</p>
-      {/* <p>{imageLink}</p>
+    <Link to={`/animal-details/${id}`}>
+      <div className="animal" style={{ backgroundColor: getRandomColor() }}>
+        <p>{Age}</p>
+        <p>{Color}</p>
+        <p>{Sex}</p>
+        {/* <p>{imageLink}</p>
       <img src={`${imageLink}`} alt={`${Type}`} /> */}
-      <p>
-        I am a {Type} and I kind look like a {looksLike}
-      </p>
-      <p>{locationStillThere}</p>
-    </div>
+        <p>
+          I am a {Type} and I kind look like a {looksLike}
+        </p>
+        <p>{locationStillThere}</p>
+      </div>
+    </Link>
   );
 }
