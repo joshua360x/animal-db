@@ -6,7 +6,7 @@ export default function DetailsPage() {
   const [currentAnimal, setCurrentAnimal] = useState({});
 
   const params = useParams();
-  console.log('🚀 ~ file: DetailsPage.js ~ line 9 ~ DetailsPage ~ params', params.id);
+
 
   useEffect(() => {
     async function seeAnimal() {
@@ -24,6 +24,9 @@ export default function DetailsPage() {
       <p>
         I am a {currentAnimal.Type} and I kind look like a {currentAnimal['Looks Like']}
       </p>
+      <a href={`  ${currentAnimal['Image Link']}`} target="_blank" rel="noopener noreferrer">
+        Come Learn more About Me
+      </a>
     </div>
   );
 }

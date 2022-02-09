@@ -18,7 +18,6 @@ export async function getSingleAnimal(id) {
     .select()
     .match({ id })
     .single();
-  console.log('🚀 ~ file: fetch-utils.js ~ line 20 ~ getSingleAnimal ~ response', response);
 
   return checkError(response);
 }

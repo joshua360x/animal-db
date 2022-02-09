@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom';
 export default function Animal({
   Age,
   Sex,
-  ['Looks Like']: looksLike,
   ['At AAC']: locationStillThere,
   id,
   Color,
-  Type,
-  ['Image Link']: imageLink,
+  Type
 }) {
   // random color
   // function getRandomColor() {
