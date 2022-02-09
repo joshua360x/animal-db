@@ -16,8 +16,9 @@ export async function getSingleAnimal(id) {
   const response = await client
     .from('foundAnimals')
     .select()
-    .match({ ['Animal ID']: id })
+    .match({ id })
     .single();
+  console.log('🚀 ~ file: fetch-utils.js ~ line 20 ~ getSingleAnimal ~ response', response);
 
   return checkError(response);
 }

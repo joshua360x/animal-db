@@ -5,7 +5,7 @@ export default function Animal({
   Sex,
   ['Looks Like']: looksLike,
   ['At AAC']: locationStillThere,
-  ['Animal ID']: id,
+  id,
   Color,
   Type,
   ['Image Link']: imageLink,

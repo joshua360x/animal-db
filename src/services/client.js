@@ -8,6 +8,5 @@ export function checkError({ data, error }) {
   if (error) {
     throw error;
   }
-  console.log(data);
   return data;
 }
