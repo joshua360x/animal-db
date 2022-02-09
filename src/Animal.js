@@ -11,12 +11,18 @@ export default function Animal({
   ['Image Link']: imageLink,
 }) {
   // random color
+  // function getRandomColor() {
+  //   var letters = '0123456789ABCDEF';
+  //   var color = '#';
+  //   for (var i = 0; i < 6; i++) {
+  //     color += letters[Math.floor(Math.random() * 16)];
+  //   }
+  //   return color;
+  // }
+
+  // get Light Colors
   function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
+    const color = 'hsl(' + Math.random() * 360 + ', 100%, 75%)';
     return color;
   }
 
