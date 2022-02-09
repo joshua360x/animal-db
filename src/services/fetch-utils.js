@@ -5,7 +5,6 @@ import { checkError, client } from './client';
 export async function getALLANimals() {
   const response = await client.from('foundAnimals').select();
 
-
   return checkError(response);
 }
 
