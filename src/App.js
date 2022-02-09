@@ -16,7 +16,7 @@ function App() {
             <Home />
           </Route>
           <Route>
-            <DetailsPage exact path="/animal-detail/:id"/>
+            <DetailsPage path="/animal-detail/:id"/>
           </Route>
         </Switch>
       </Router>

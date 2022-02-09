@@ -47,7 +47,7 @@ export default function Animal({
         {/* <p>{imageLink}</p>
       <img src={`${imageLink}`} alt={`${Type}`} /> */}
         <p>
-          I am a {Type} and I kind look like a {looksLike}
+          I am a {Type}
         </p>
         <p>{locationStillThere}</p>
       </div>
